@@ -1,6 +1,5 @@
 stepDefinitions\CommonMethods.class
 stepDefinitions\Hooks.class
 stepDefinitions\TestBase.class
-MyRunner\TestRunner.class
 stepDefinitions\Herokuapp_StepDefinition.class
 pages\HerokuappPage.class
