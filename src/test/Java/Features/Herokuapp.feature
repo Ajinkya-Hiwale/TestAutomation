@@ -53,5 +53,5 @@ Then click on Logout
 
 Examples:
 	| email | password | created_message|updated_message|deleted_message|
-	| admin@example.com  | password|Product was successfully created.|Product was successfully updated.|Product was successfully destroyed.|
+	| email  | password|Product was successfully created.|Product was successfully updated.|Product was successfully destroyed.|
 	

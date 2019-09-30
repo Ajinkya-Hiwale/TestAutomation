@@ -24,7 +24,7 @@ public class Hooks {
 
 	public static WebDriver driver;
 
-	@Before
+	@Before 
 	public void setUP() {
 		System.out.println("launching chrome Browser");
 		System.setProperty("webdriver.chrome.driver",
