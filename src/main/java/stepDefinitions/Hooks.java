@@ -45,9 +45,7 @@ public class Hooks extends TestBase{
 		
 		this.scenario=scenario;
 		System.out.println("Scenario name is "+scenario.getName());
-		
-
-	}
+			}
 
 	@After
 	public void tearDown() {
