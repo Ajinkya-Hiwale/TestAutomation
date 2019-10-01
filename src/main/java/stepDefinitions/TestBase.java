@@ -34,7 +34,15 @@ public class TestBase {
 	
 	public static void getDriver()
 	{
-		if(prop.getProperty("browser").equals("chrome"))
+	
+		//to get value from property file
+		//if(prop.getProperty("browser").equals("chrome"))  
+			
+		
+		//to get value from jenkins or maven
+		String browser=System.getProperty("browser");
+			if(browser.equals("chrome"))
+			
 		{
 			System.setProperty("webdriver.chrome.driver",
 					System.getProperty("user.dir") + "\\src\\main\\java\\driver\\chromedriver.exe");
@@ -42,7 +50,7 @@ public class TestBase {
 			driver = new ChromeDriver();
 		}
 		else
-			if(prop.getProperty("browser").equals("ff"))
+			if(browser.equals("ff"))
 			{
 				System.setProperty("webdriver.gecko.driver",
 						System.getProperty("user.dir") + "\\src\\main\\java\\driver\\geckodriver.exe");
