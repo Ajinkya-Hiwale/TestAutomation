@@ -1,5 +1,0 @@
-stepDefinitions\CommonMethods.class
-stepDefinitions\Hooks.class
-stepDefinitions\TestBase.class
-stepDefinitions\Herokuapp_StepDefinition.class
-pages\HerokuappPage.class

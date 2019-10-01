@@ -17,7 +17,7 @@ Given user is on the page
 
 
 
-@TestFature2
+@TestFeture2
 Scenario Outline: Testing Error and Negative Scenarios
 Given user is on the website
 When User enters invalid "<email>" and "<password>"

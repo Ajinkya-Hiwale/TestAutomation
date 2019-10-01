@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 /*  @Webdriver used to perform operation on browser
  * 
@@ -22,23 +23,29 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class Hooks {
+public class Hooks extends TestBase{
 
-	public static WebDriver driver;
+	public Hooks() throws IOException {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	
 	
 	Scenario scenario;
+	public TestBase testbase;
 
 	@Before 
 	public void setUP(Scenario scenario) {
-		System.out.println("launching chrome Browser");
-		System.setProperty("webdriver.chrome.driver",
-				System.getProperty("user.dir") + "\\src\\main\\java\\driver\\chromedriver.exe");
+//		System.out.println("launching chrome Browser");
+//		System.setProperty("webdriver.chrome.driver",
+//				System.getProperty("user.dir") + "\\src\\main\\java\\driver\\chromedriver.exe");
 		//System.setProperty("webdriver.chrome.driver", "C:/Program Files/chromedriver.exe");
-		driver = new ChromeDriver();
+		getDriver();
+		
 		this.scenario=scenario;
 		System.out.println("Scenario name is "+scenario.getName());
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
 
 	}
 
@@ -50,7 +57,7 @@ public class Hooks {
 			scenario.embed(((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES), "image/png");
 		}
 		
-		driver.close();
+		//driver.close();
 		driver.quit();
 	}
 
