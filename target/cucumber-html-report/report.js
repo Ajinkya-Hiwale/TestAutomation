@@ -47,7 +47,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 36130951663,
+  "duration": 9737182858,
   "status": "passed"
 });
 formatter.scenario({
@@ -73,11 +73,12 @@ formatter.match({
   "location": "Herokuapp_StepDefinition.user_is_on_the_page()"
 });
 formatter.result({
-  "duration": 7699457744,
+  "duration": 151421404,
   "status": "passed"
 });
+formatter.write("End of the test");
 formatter.after({
-  "duration": 901641544,
+  "duration": 603544345,
   "status": "passed"
 });
 });

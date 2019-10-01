@@ -40,11 +40,11 @@
         "before": [
           {
             "result": {
-              "duration": 36130951663,
+              "duration": 9737182858,
               "status": "passed"
             },
             "match": {
-              "location": "Hooks.setUP()"
+              "location": "Hooks.setUP(Scenario)"
             }
           }
         ],
@@ -55,7 +55,7 @@
         "after": [
           {
             "result": {
-              "duration": 901641544,
+              "duration": 603544345,
               "status": "passed"
             },
             "match": {
@@ -68,9 +68,12 @@
         "steps": [
           {
             "result": {
-              "duration": 7699457744,
+              "duration": 151421404,
               "status": "passed"
             },
+            "output": [
+              "End of the test"
+            ],
             "line": 16,
             "name": "user is on the page",
             "match": {
