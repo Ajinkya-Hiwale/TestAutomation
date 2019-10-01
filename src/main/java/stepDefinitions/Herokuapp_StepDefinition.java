@@ -38,6 +38,13 @@ public class Herokuapp_StepDefinition extends TestBase {
 
 	}
 
+	@Given("^user is on the page$")
+	public void user_is_on_the_page() throws Throwable {
+		// dealpage.getUrl("https://ajinkya-hiwale.herokuapp.com/admin");
+		System.out.println("Tested succesfully");
+
+	}
+	
 	@Given("^user is on the website$")
 	public void user_is_on_the_website() throws Throwable {
 		// dealpage.getUrl("https://ajinkya-hiwale.herokuapp.com/admin");

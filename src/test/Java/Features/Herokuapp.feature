@@ -1,6 +1,3 @@
-@FunctionalTest
-Feature: TechVerito herokuapp Testing Scenarios
-
 #Features are nothing but are the test cases
 #Feature:In another word it is test scenario name
 #Scenario Outline:It is a Test case name
@@ -9,6 +6,16 @@ Feature: TechVerito herokuapp Testing Scenarios
 #When- checking condition
 #Then - what should be the result
 #Examples - are used to provide test data as a key and value pair
+@FunctionalTest
+Feature: TechVerito herokuapp Testing Scenarios
+
+
+
+@TestFeature
+Scenario: Testing Error and Negative Scenarios
+Given user is on the page
+
+
 
 @ErrorNegativeScenarios
 Scenario Outline: Testing Error and Negative Scenarios

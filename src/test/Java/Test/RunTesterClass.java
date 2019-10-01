@@ -10,7 +10,7 @@ glue = {"stepDefinitions" }, //path of stepdefinition
 format = { "pretty"}, //to generate reports
 monochrome = true, //display the console output in a proper readable format
 strict = true, //it will check if any step is not defined in step definition file
-dryRun = false,tags= {"@FunctionalTest"}
+dryRun = false,tags= {"@TestFeature"}
 ) //to check the mapping is proper between feature file and step def fil
 
 public class RunTesterClass {
