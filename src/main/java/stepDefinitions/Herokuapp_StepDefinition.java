@@ -42,6 +42,7 @@ public class Herokuapp_StepDefinition extends TestBase {
 	public void user_is_on_the_page() throws Throwable {
 		// dealpage.getUrl("https://ajinkya-hiwale.herokuapp.com/admin");
 		System.out.println("Test case to be failed");
+		Assert.assertEquals(true, false);
 
 	}
 	
