@@ -52,6 +52,7 @@ public class TestBase {
 			
 			//System.setProperty("webdriver.chrome.driver", "C:/Program Files/chromedriver.exe");
 			driver = new ChromeDriver(capabilities);
+			System.out.println("Browser is "+browser+ "Verison is "+System.getProperty("version") +" Platform is "+System.getProperty("platform"));
 		}
 		else
 			if(browser.equals("ff"))
@@ -60,6 +61,8 @@ public class TestBase {
 						System.getProperty("user.dir") + "\\src\\main\\java\\driver\\geckodriver.exe");
 				capabilities.setCapability(CapabilityType.VERSION, System.getProperty("version"));
 				capabilities.setCapability(CapabilityType.PLATFORM, System.getProperty("platform"));
+				
+				System.out.println("Browser is "+browser+ "Verison is "+System.getProperty("version") +" Platform is "+System.getProperty("platform"));
 				driver = new FirefoxDriver(capabilities);
 			}
 		driver.manage().window().maximize();
