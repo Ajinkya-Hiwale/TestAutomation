@@ -1,0 +1,102 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Features are nothing but are the test cases"
+      },
+      {
+        "line": 2,
+        "value": "#Feature:In another word it is test scenario name"
+      },
+      {
+        "line": 3,
+        "value": "#Scenario Outline:It is a Test case name"
+      },
+      {
+        "line": 4,
+        "value": "#Below three are called Gherkin keywords"
+      },
+      {
+        "line": 5,
+        "value": "#Given-Given data"
+      },
+      {
+        "line": 6,
+        "value": "#When- checking condition"
+      },
+      {
+        "line": 7,
+        "value": "#Then - what should be the result"
+      },
+      {
+        "line": 8,
+        "value": "#Examples - are used to provide test data as a key and value pair"
+      }
+    ],
+    "line": 10,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 36130951663,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUP()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Testing Error and Negative Scenarios",
+        "description": "",
+        "id": "techverito-herokuapp-testing-scenarios;testing-error-and-negative-scenarios",
+        "after": [
+          {
+            "result": {
+              "duration": 901641544,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7699457744,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user is on the page",
+            "match": {
+              "location": "Herokuapp_StepDefinition.user_is_on_the_page()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 14,
+            "name": "@TestFeature"
+          }
+        ]
+      }
+    ],
+    "name": "TechVerito herokuapp Testing Scenarios",
+    "description": "",
+    "id": "techverito-herokuapp-testing-scenarios",
+    "keyword": "Feature",
+    "uri": "Herokuapp.feature",
+    "tags": [
+      {
+        "line": 9,
+        "name": "@FunctionalTest"
+      }
+    ]
+  }
+]
